@@ -8,7 +8,12 @@ You will implement the functions in recommender.py:
 - score_song
 - recommend_songs
 """
-from src.rag import retrieve_songs_by_query, generate_explanation, compute_confidence
+from src.rag import (
+    retrieve_songs_by_query,
+    generate_explanation,
+    compute_confidence,
+    query_to_preferences,   # 👈 ADD THIS
+)
 from src.logger import log
 from src.recommender import (
     EnergyFocusedStrategy,
@@ -33,8 +38,10 @@ def main() -> None:
 
     strategy = EnergyFocusedStrategy()
 
+    user_prefs = query_to_preferences(user_query)
+
     recommendations = recommend_songs(
-        {"favorite_genre": "", "favorite_mood": ""},
+        user_prefs,
         retrieved_songs,
         k=5,
         strategy=strategy,

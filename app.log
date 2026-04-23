@@ -6,3 +6,10 @@
 2026-04-23 14:47:28,225 - INFO - Recommended Library Rain with score 0.0
 2026-04-23 14:47:28,226 - INFO - Generated explanation for song: Spacewalk Thoughts
 2026-04-23 14:47:28,227 - INFO - Recommended Spacewalk Thoughts with score 0.0
+2026-04-23 14:52:43,825 - INFO - Query: sad | Expanded: ['sad', 'melancholy', 'chill', 'emotional'] | Results: 3
+2026-04-23 14:52:43,832 - INFO - Generated explanation for song: Midnight Coding
+2026-04-23 14:52:43,833 - INFO - Recommended Midnight Coding with score 3.9975000000000005
+2026-04-23 14:52:43,833 - INFO - Generated explanation for song: Library Rain
+2026-04-23 14:52:43,834 - INFO - Recommended Library Rain with score 3.7900000000000005
+2026-04-23 14:52:43,834 - INFO - Generated explanation for song: Spacewalk Thoughts
+2026-04-23 14:52:43,835 - INFO - Recommended Spacewalk Thoughts with score 3.5825
