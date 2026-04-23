@@ -60,6 +60,21 @@ def main() -> None:
 
         log(f"Recommended {song['title']} with score {score}")
 
+profiles = [
+    "i want sad chill music",
+    "high energy gym rock music",
+    "happy upbeat dance songs"
+]
+
+for query in profiles:
+    print(f"\n=== Query: {query} ===")
+    retrieved = retrieve_songs_by_query(query, songs)
+    prefs = query_to_preferences(query)
+
+    recs = recommend_songs(prefs, retrieved, k=3, strategy=strategy)
+
+    for song, score, _ in recs:
+        print(f"{song['title']} - {score:.2f}")
 
 if __name__ == "__main__":
     main()

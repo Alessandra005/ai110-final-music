@@ -15,8 +15,13 @@ def retrieve_songs_by_query(query: str, songs: List[Dict]) -> List[Dict]:
     query = query.lower()
     results = []
 
-    # expand query using mapping
-    expanded_terms = KEYWORD_MAP.get(query, [query])
+    expanded_terms = []
+    for key, values in KEYWORD_MAP.items():
+        if key in query:
+            expanded_terms.extend(values)
+
+    if not expanded_terms:
+        expanded_terms = [query]
 
     for song in songs:
         song_text = f"{song['genre']} {song['mood']}".lower()
@@ -48,7 +53,7 @@ def compute_confidence(score: float) -> float:
 
 def query_to_preferences(query: str) -> Dict:
     """
-    Converts user text into structured preferences
+    Converts natural language into structured preferences
     """
     query = query.lower()
 
@@ -61,19 +66,20 @@ def query_to_preferences(query: str) -> Dict:
         "target_acousticness": 0.5,
     }
 
-    if "sad" in query:
+    # keyword detection
+    if any(word in query for word in ["sad", "emotional", "cry"]):
         prefs["favorite_mood"] = "chill"
         prefs["target_valence"] = 0.3
 
-    if "happy" in query:
+    if any(word in query for word in ["happy", "fun", "upbeat"]):
         prefs["favorite_mood"] = "happy"
         prefs["target_valence"] = 0.8
 
-    if "rock" in query:
+    if any(word in query for word in ["rock", "metal"]):
         prefs["favorite_genre"] = "rock"
         prefs["target_energy"] = 0.9
 
-    if "chill" in query or "lofi" in query:
+    if any(word in query for word in ["chill", "lofi", "study", "relax"]):
         prefs["favorite_genre"] = "lofi"
         prefs["target_energy"] = 0.3
         prefs["target_acousticness"] = 0.7
