@@ -22,3 +22,24 @@
 2026-04-23 15:04:05,163 - INFO - Recommended Focus Flow with score 4.165
 2026-04-23 15:04:05,163 - INFO - Generated explanation for song: Spacewalk Thoughts
 2026-04-23 15:04:05,164 - INFO - Recommended Spacewalk Thoughts with score 3.2325
+2026-04-23 15:54:02,113 - INFO - System started
+2026-04-23 15:54:02,113 - INFO - Loaded 30 songs
+2026-04-23 15:54:12,888 - INFO - User query: i want chill music
+2026-04-23 15:54:12,889 - INFO - Query: i want chill music | Expanded: ['chill', 'lofi', 'calm'] | Results: 5
+2026-04-23 15:54:12,890 - INFO - Generated explanation for song: Pyramids
+2026-04-23 15:54:12,891 - INFO - Recommended: Pyramids | Score: 2.90 | Confidence: 0.58
+2026-04-23 15:54:12,891 - INFO - Generated explanation for song: Fairy of Shampoo
+2026-04-23 15:54:12,893 - INFO - Recommended: Fairy of Shampoo | Score: 2.88 | Confidence: 0.57
+2026-04-23 15:54:12,893 - INFO - Generated explanation for song: Like Him
+2026-04-23 15:54:12,894 - INFO - Recommended: Like Him | Score: 2.62 | Confidence: 0.53
+2026-04-23 15:54:12,895 - INFO - Generated explanation for song: Supernatural
+2026-04-23 15:54:12,896 - INFO - Recommended: Supernatural | Score: 2.50 | Confidence: 0.5
+2026-04-23 15:54:12,896 - INFO - Generated explanation for song: Stateside
+2026-04-23 15:54:12,897 - INFO - Recommended: Stateside | Score: 2.50 | Confidence: 0.5
+2026-04-23 15:54:12,897 - INFO - Retrieved 5 songs
+2026-04-23 15:54:12,898 - INFO - Running profile test: sad indie low-energy music
+2026-04-23 15:54:12,899 - INFO - Query: sad indie low-energy music | Expanded: ['sad', 'melancholy', 'chill', 'emotional'] | Results: 10
+2026-04-23 15:54:12,901 - INFO - Running profile test: high energy gym edm or rock
+2026-04-23 15:54:12,902 - INFO - Query: high energy gym edm or rock | Expanded: ['rock'] | Results: 3
+2026-04-23 15:54:12,903 - INFO - Running profile test: happy upbeat dance pop
+2026-04-23 15:54:12,904 - INFO - Query: happy upbeat dance pop | Expanded: ['happy', 'upbeat', 'dance', 'pop'] | Results: 12

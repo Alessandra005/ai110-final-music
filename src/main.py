@@ -12,7 +12,7 @@ from src.rag import (
     retrieve_songs_by_query,
     generate_explanation,
     compute_confidence,
-    query_to_preferences,   # 👈 ADD THIS
+    query_to_preferences,
 )
 from src.logger import log
 from src.recommender import (
@@ -26,8 +26,11 @@ from src.recommender import (
 
 def main() -> None:
     songs = load_songs("data/songs.csv")
+    log("System started")
+    log(f"Loaded {len(songs)} songs")
 
     user_query = input("Enter what kind of music you want: ")
+    log(f"User query: {user_query}")
 
     # RAG: retrieve relevant songs first
     retrieved_songs = retrieve_songs_by_query(user_query, songs)
@@ -58,23 +61,32 @@ def main() -> None:
         print(f"AI Explanation: {explanation}")
         print()
 
-        log(f"Recommended {song['title']} with score {score}")
+        log(f"Recommended: {song['title']} | Score: {score:.2f} | Confidence: {confidence}")
 
-profiles = [
-    "i want sad chill music",
-    "high energy gym rock music",
-    "happy upbeat dance songs"
-]
+    log(f"Retrieved {len(retrieved_songs)} songs")
 
-for query in profiles:
-    print(f"\n=== Query: {query} ===")
-    retrieved = retrieve_songs_by_query(query, songs)
-    prefs = query_to_preferences(query)
+    # 3-PROFILE EXPERIMENT 
+    profiles = [
+        "sad indie low-energy music",
+        "high energy gym edm or rock",
+        "happy upbeat dance pop"
+    ]
 
-    recs = recommend_songs(prefs, retrieved, k=3, strategy=strategy)
+    print("\n=== Running 3 Profile Experiments ===\n")
 
-    for song, score, _ in recs:
-        print(f"{song['title']} - {score:.2f}")
+    for profile in profiles:
+        print(f"\n--- Profile: {profile} ---")
+        log(f"Running profile test: {profile}")
+
+        retrieved = retrieve_songs_by_query(profile, songs)
+        prefs = query_to_preferences(profile)
+
+        recs = recommend_songs(prefs, retrieved, k=3, strategy=strategy)
+
+        for song, score, _ in recs:
+            print(f"{song['title']} - {score:.2f}")
+        print()
+
 
 if __name__ == "__main__":
     main()

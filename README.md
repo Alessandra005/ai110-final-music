@@ -2,93 +2,134 @@
 
 ## 📌 Overview
 
-This project extends my original **AI110 Music Recommender Simulation** into a full **Applied AI System** using Retrieval-Augmented Generation (RAG) and reliability features.
+This project extends my original **AI110 Music Recommender Simulation** into a full **Applied AI System** using **Retrieval-Augmented Generation (RAG)**, natural language query processing, and reliability evaluation.
 
-The system allows users to input natural language queries (e.g., *"sad chill music"*), retrieves relevant songs from a dataset, and generates AI-based explanations for recommendations.
+The system allows users to type natural language requests (e.g., *“i want chill music”*), retrieves relevant songs from a structured dataset, scores them using a strategy-based recommender, and generates AI-style explanations for each recommendation.
 
 ---
 
-## 🧠 Original Project
+## 🧠 Original Project Summary
 
-The original project was a rule-based music recommender that:
+The original project was a rule-based recommender that:
 
-* Loaded songs from a dataset
-* Scored songs based on user preferences (genre, mood, energy, etc.)
-* Returned top recommendations using different scoring strategies
+- Loaded songs from a CSV dataset  
+- Scored songs based on genre, mood, energy, and tempo  
+- Returned top recommendations using different strategies (genre-first, mood-first, energy-focused)
 
-This version expands the system by integrating natural language input, retrieval logic, and evaluation mechanisms.
+This final project expands the system into a **full AI pipeline** by adding:
 
-## 🎧 How Real-World Music Recommendation Systems Work
+- Natural language query interpretation  
+- Retrieval-Augmented Generation (RAG)  
+- AI-generated explanations  
+- Confidence scoring  
+- Logging and reliability evaluation  
 
-Platforms like Spotify and YouTube use machine learning models to recommend music based on large-scale data. These systems rely on three main components:
+---
 
-* **Input Data:** Song features such as genre, tempo, energy, mood, and user interaction data (e.g., listening history, skips, likes).
-* **User Preferences:** Learned patterns from user behavior, such as favorite genres, frequently played songs, and listening time.
-* **Ranking & Selection:** Algorithms score and rank songs based on how well they match user preferences, then return the top results.
+## 🎧 How Real-World Music Recommenders Work
 
-In this project, I simulate this process by:
+Modern platforms like Spotify, Apple Music, and YouTube rely on:
 
-* Using song attributes (genre, mood, energy, etc.) as input data
-* Converting user queries into structured preferences
-* Scoring and ranking songs based on similarity to those preferences
+### **1. Input Data**
+Song metadata such as:
+- Genre  
+- Mood  
+- Tempo (BPM)  
+- Energy  
+- Danceability  
+- Acousticness  
 
-This reflects a simplified version of real recommendation systems, which often use more complex models such as collaborative filtering and deep learning.
+### **2. User Preferences**
+Learned from:
+- Listening history  
+- Skips  
+- Likes  
+- Playlist patterns  
+
+### **3. Ranking & Selection**
+Algorithms score songs based on similarity to user preferences and return the top-ranked items.
+
+### **How This Project Simulates That**
+This system mirrors that pipeline by:
+
+- Converting natural language into structured preferences  
+- Retrieving relevant songs using keyword-based RAG  
+- Scoring songs using a strategy class  
+- Generating explanations and confidence scores  
 
 ---
 
 ## 🚀 Key Features
 
 ### 🔍 Retrieval-Augmented Generation (RAG)
-
-* Converts user queries into structured preferences
-* Retrieves relevant songs using keyword expansion
-* Uses retrieved data to generate contextual explanations
+- Expands user queries into structured preferences  
+- Retrieves relevant songs using keyword matching  
+- Filters the dataset before scoring  
 
 ### 🤖 AI Explanation Layer
-
-* Generates explanations for why each song was recommended
-* Simulates an AI reasoning process based on user intent and song attributes
+- Generates natural-language explanations for each recommendation  
+- Uses song metadata + user intent  
 
 ### 📊 Reliability & Evaluation
+- Logging system (`app.log`)  
+- Confidence scoring  
+- Unit tests for retrieval and scoring  
 
-* Logging system (`app.log`) to track system behavior
-* Confidence scores for each recommendation
-* Unit tests to validate retrieval functionality
+---
+
+## 👥 Experiments With Multiple User Profiles (Rubric Requirement)
+
+To evaluate the system, I created **three distinct user profiles**:
+
+1. **Sad Indie Low-Energy Listener**  
+2. **High-Energy Gym EDM/Rock Listener**  
+3. **Happy Upbeat Dance Pop Listener**
+
+The system was run for each profile using the built-in test block in `main.py`.
+
+### ✔ Example Output Screenshots  
+![Run](assets/g_screenshot.png) 
+![Profiles](assets/3p_screenshot.png)
+
+### ✔ Comparison Summary
+
+- The **sad indie profile** preferred low-energy, mellow tracks with indie or R&B influence.  
+- The **high-energy gym profile** shifted toward fast-tempo, high-energy rock and EDM-like songs (e.g., *Smells Like Teen Spirit*).  
+- The **happy upbeat profile** selected high-valence, danceable pop and reggaeton tracks.  
+
+This demonstrates that the recommender adapts its scoring based on mood, energy, and genre preferences — similar to real-world systems.
 
 ---
 
 ## 🏗️ System Architecture
 
-**Pipeline:**
-
-User Input → Query Processing → Retrieval → Scoring → AI Explanation → Output
-↓
-Logging & Testing
+The system follows this pipeline:
+![Diagram](assets/systems_diagram.png)
 
 ---
 
 ## ⚙️ Setup Instructions
 
-1. Clone the repository:
+### 1. Clone the repository
 
 ```bash
-git clone https://github.com/Alessandra005/applied-ai-system-music.git
-cd applied-ai-system-music
+git clone https://github.com/Alessandra005/ai110-final-music.git
+cd ai110-final-music
 ```
 
-2. Install dependencies:
+### 2. Install dependencies
 
 ```bash
-pip install pytest
+pip install -r requirements.txt
 ```
 
-3. Run the system:
+### 3. Run the system
 
 ```bash
 python -m src.main
 ```
 
-4. Run tests:
+### 4. Run tests
 
 ```bash
 pytest
@@ -99,86 +140,84 @@ pytest
 ## 💡 Example Usage
 
 ### Input:
-
 ```
-sad
+i want chill music
 ```
 
 ### Output:
-
 ```
-Midnight Coding - Score: 2.31
-Confidence: 0.46
-AI Explanation: This song matches your request 'sad' because it is chill and in the lofi genre.
+Pyramids - Score: 2.90
+Confidence: 0.58
+AI Explanation: This song matches your request 'i want chill music' because it is chill and in the rnb genre.
 ```
 
 ---
 
 ## 🧪 Testing Summary
 
-* Retrieval test ensures relevant songs are returned
-* Logging captures system decisions and outputs
-* Confidence scores provide transparency in recommendation quality
-
-Example:
-
-> 1/1 tests passed. The system performs well for keyword-based queries but may struggle with very complex or ambiguous inputs.
+- Retrieval tests confirm relevant songs are returned  
+- Logging captures system decisions  
+- Confidence scores provide transparency  
+- The system performs well for keyword-based queries but may struggle with ambiguous or multi-intent inputs  
 
 ---
 
 ## ⚖️ Design Decisions
 
-* Used keyword expansion instead of full NLP for simplicity and control
-* Chose a modular design (RAG + scoring + explanation) for clarity
-* Implemented lightweight confidence scoring for interpretability
+### Why RAG?
+- Lightweight  
+- Easy to interpret  
+- Works well with small datasets  
 
-Trade-off:
+### Why Strategy-Based Scoring?
+- Modular  
+- Easy to extend  
+- Clear logic for grading and debugging  
 
-* Simpler system vs. full ML model (faster, but less flexible)
+### Trade-offs
+- Simpler than ML-based recommenders  
+- Less flexible but more transparent  
 
 ---
 
 ## ⚠️ Limitations
 
-* Limited understanding of complex natural language queries
-* Retrieval depends on predefined keyword mappings
-* AI explanations are simulated rather than generated by a trained model
+- Limited natural language understanding  
+- Retrieval depends on keyword mappings  
+- Explanations are simulated, not model-generated  
+- Dataset size limits diversity  
 
 ---
 
 ## 🔐 Ethics & Responsible AI
 
-* The system may reflect biases present in the dataset (e.g., genre imbalance)
-* Misuse risk: over-reliance on recommendations without diversity
-* Mitigation:
-
-  * Transparent scoring
-  * Clear explanations
-  * Confidence indicators
+- Recommendations may reflect dataset biases  
+- Confidence scores help prevent over-trust  
+- Logging ensures transparency  
+- No personal data is stored  
 
 ---
 
 ## 🧠 Reflection
 
-This project helped me understand how to:
+This project helped me learn how to:
 
-* Design an end-to-end AI system
-* Combine retrieval and reasoning into a pipeline
-* Evaluate AI reliability beyond just output correctness
+- Build an end-to-end AI system  
+- Combine retrieval, scoring, and explanation layers  
+- Evaluate reliability beyond accuracy  
+- Debug and refine AI pipelines  
 
-One helpful AI interaction:
+**Helpful AI interaction:**  
+AI helped structure the RAG pipeline and refine the dataset.
 
-* Assisted in structuring the RAG pipeline and modularizing components
-
-One limitation observed:
-
-* Suggested overly simplistic retrieval logic that required refinement
+**Observed limitation:**  
+Initial retrieval logic was too simplistic and required iterative improvement.
 
 ---
 
 ## 🎥 Demo
 
-Loom walkthrough: *(add your link here)*
+Loom walkthrough: *(add link here)*
 
 ---
 
@@ -191,16 +230,22 @@ src/
  ├── rag.py
  ├── logger.py
 
-tests/
- ├── test_recommender.py
- ├── test_rag.py
+data/
+ ├── songs.csv
 
 assets/
  ├── system_diagram.png
+ ├── profile1.png
+ ├── profile2.png
+ ├── profile3.png
+
+tests/
+ ├── test_recommender.py
+ ├── test_rag.py
 ```
 
 ---
 
 ## 💼 Portfolio Note
 
-This project demonstrates my ability to design and implement a modular AI system that integrates retrieval, reasoning, and evaluation. It reflects my interest in building practical AI applications that are both functional and responsible.
+This project demonstrates my ability to design and implement a modular AI system that integrates retrieval, reasoning, and evaluation. It reflects my interest in building practical, interpretable AI applications.
