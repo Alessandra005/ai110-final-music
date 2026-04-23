@@ -1,0 +1,8 @@
+2026-04-23 14:45:55,792 - INFO - Retrieved 0 songs for query: sad
+2026-04-23 14:47:28,217 - INFO - Query: sad | Expanded: ['sad', 'melancholy', 'chill', 'emotional'] | Results: 3
+2026-04-23 14:47:28,218 - INFO - Generated explanation for song: Midnight Coding
+2026-04-23 14:47:28,224 - INFO - Recommended Midnight Coding with score 0.0
+2026-04-23 14:47:28,224 - INFO - Generated explanation for song: Library Rain
+2026-04-23 14:47:28,225 - INFO - Recommended Library Rain with score 0.0
+2026-04-23 14:47:28,226 - INFO - Generated explanation for song: Spacewalk Thoughts
+2026-04-23 14:47:28,227 - INFO - Recommended Spacewalk Thoughts with score 0.0

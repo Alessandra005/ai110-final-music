@@ -8,7 +8,8 @@ You will implement the functions in recommender.py:
 - score_song
 - recommend_songs
 """
-
+from src.rag import retrieve_songs_by_query, generate_explanation, compute_confidence
+from src.logger import log
 from src.recommender import (
     EnergyFocusedStrategy,
     GenreFirstStrategy,
@@ -21,56 +22,36 @@ from src.recommender import (
 def main() -> None:
     songs = load_songs("data/songs.csv")
 
-    # Pick one of: 'genre-first', 'mood-first', 'energy-focused'
-    strategy_name = "energy-focused"
-    strategy_map = {
-        "genre-first": GenreFirstStrategy,
-        "mood-first": MoodFirstStrategy,
-        "energy-focused": EnergyFocusedStrategy,
-    }
-    strategy = strategy_map[strategy_name]()
+    user_query = input("Enter what kind of music you want: ")
 
-    # Starter example profile
-    # user_prefs = {
-    #     "favorite_genre": "pop",
-    #     "favorite_mood": "happy",
-    #     "target_energy": 0.8,
-    #     "target_valence": 0.75,
-    #     "target_danceability": 0.7,
-    #     "target_acousticness": 0.2,
-    # }
+    # RAG: retrieve relevant songs first
+    retrieved_songs = retrieve_songs_by_query(user_query, songs)
 
-    # Profile 2: Chill Lofi
-    # user_prefs = {
-    #     "favorite_genre": "lofi",
-    #     "favorite_mood": "chill",
-    #     "target_energy": 0.35,
-    #     "target_valence": 0.55,
-    #     "target_danceability": 0.4,
-    #     "target_acousticness": 0.7
-    # }
+    if not retrieved_songs:
+        print("No songs found for that query.")
+        return
 
-    # Profile 3: Deep Intense Rock
-    user_prefs = {
-        "favorite_genre": "rock",
-        "favorite_mood": "intense",
-        "target_energy": 0.92,
-        "target_valence": 0.45,
-        "target_danceability": 0.5,
-        "target_acousticness": 0.1
-    }
-    
-    print(f"\n=== Mode: {strategy_name} ===\n")
-    recommendations = recommend_songs(user_prefs, songs, k=5, strategy=strategy)
+    strategy = EnergyFocusedStrategy()
+
+    recommendations = recommend_songs(
+        {"favorite_genre": "", "favorite_mood": ""},
+        retrieved_songs,
+        k=5,
+        strategy=strategy,
+    )
 
     print("\nTop recommendations:\n")
-    for rec in recommendations:
-        # You decide the structure of each returned item.
-        # A common pattern is: (song, score, explanation)
-        song, score, explanation = rec
+
+    for song, score, _ in recommendations:
+        explanation = generate_explanation(user_query, song)
+        confidence = compute_confidence(score)
+
         print(f"{song['title']} - Score: {score:.2f}")
-        print(f"Because: {', '.join(explanation)}")
+        print(f"Confidence: {confidence}")
+        print(f"AI Explanation: {explanation}")
         print()
+
+        log(f"Recommended {song['title']} with score {score}")
 
 
 if __name__ == "__main__":
