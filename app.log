@@ -43,3 +43,203 @@
 2026-04-23 15:54:12,902 - INFO - Query: high energy gym edm or rock | Expanded: ['rock'] | Results: 3
 2026-04-23 15:54:12,903 - INFO - Running profile test: happy upbeat dance pop
 2026-04-23 15:54:12,904 - INFO - Query: happy upbeat dance pop | Expanded: ['happy', 'upbeat', 'dance', 'pop'] | Results: 12
+2026-04-24 09:47:50,847 - INFO - System started
+2026-04-24 09:47:50,851 - INFO - Loaded 30 songs
+2026-04-24 09:47:56,486 - INFO - User query: i want happy music
+2026-04-24 09:47:56,487 - INFO - Query: i want happy music | Expanded: ['happy', 'upbeat', 'dance'] | Results: 5
+2026-04-24 09:47:56,492 - INFO - Generated explanation for song: ETA
+2026-04-24 09:47:56,493 - INFO - Recommended: ETA | Score: 3.62 | Confidence: 0.72
+2026-04-24 09:47:56,493 - INFO - Generated explanation for song: Best of Me
+2026-04-24 09:47:56,494 - INFO - Recommended: Best of Me | Score: 3.62 | Confidence: 0.72
+2026-04-24 09:47:56,494 - INFO - Generated explanation for song: Telephone
+2026-04-24 09:47:56,494 - INFO - Recommended: Telephone | Score: 3.40 | Confidence: 0.68
+2026-04-24 09:47:56,494 - INFO - Generated explanation for song: EeO
+2026-04-24 09:47:56,495 - INFO - Recommended: EeO | Score: 3.40 | Confidence: 0.68
+2026-04-24 09:47:56,495 - INFO - Generated explanation for song: Pose
+2026-04-24 09:47:56,496 - INFO - Recommended: Pose | Score: 3.30 | Confidence: 0.66
+2026-04-24 09:47:56,496 - INFO - Retrieved 5 songs
+2026-04-24 09:47:56,496 - INFO - Running profile test: sad indie low-energy music
+2026-04-24 09:47:56,496 - INFO - Query: sad indie low-energy music | Expanded: ['sad', 'melancholy', 'chill', 'emotional'] | Results: 10
+2026-04-24 09:47:56,497 - INFO - Running profile test: high energy gym edm or rock
+2026-04-24 09:47:56,497 - INFO - Query: high energy gym edm or rock | Expanded: ['rock'] | Results: 3
+2026-04-24 09:47:56,498 - INFO - Running profile test: happy upbeat dance pop
+2026-04-24 09:47:56,498 - INFO - Query: happy upbeat dance pop | Expanded: ['happy', 'upbeat', 'dance', 'pop'] | Results: 12
+2026-04-24 10:02:44,930 - INFO - System started
+2026-04-24 10:02:44,930 - INFO - Loaded 30 songs
+2026-04-24 10:02:54,883 - INFO - User query: chill music
+2026-04-24 10:02:54,884 - INFO - Query: chill music | Expanded: ['chill', 'lofi', 'calm'] | Results: 5
+2026-04-24 10:02:59,250 - INFO - Ranking mode selected: Genre-First
+2026-04-24 10:02:59,251 - INFO - Generated explanation for song: Pyramids
+2026-04-24 10:02:59,252 - INFO - Recommended: Pyramids | Score: 2.27 | Confidence: 0.45
+2026-04-24 10:02:59,252 - INFO - Generated explanation for song: Fairy of Shampoo
+2026-04-24 10:02:59,252 - INFO - Recommended: Fairy of Shampoo | Score: 2.23 | Confidence: 0.45
+2026-04-24 10:02:59,252 - INFO - Generated explanation for song: Like Him
+2026-04-24 10:02:59,252 - INFO - Recommended: Like Him | Score: 2.02 | Confidence: 0.4
+2026-04-24 10:02:59,252 - INFO - Generated explanation for song: Supernatural
+2026-04-24 10:02:59,252 - INFO - Recommended: Supernatural | Score: 1.90 | Confidence: 0.38
+2026-04-24 10:02:59,252 - INFO - Generated explanation for song: Stateside
+2026-04-24 10:02:59,252 - INFO - Recommended: Stateside | Score: 1.90 | Confidence: 0.38
+2026-04-24 10:02:59,255 - INFO - Retrieved 5 songs
+2026-04-24 10:02:59,256 - INFO - Running profile test: sad indie low-energy music
+2026-04-24 10:02:59,256 - INFO - Query: sad indie low-energy music | Expanded: ['sad', 'melancholy', 'chill', 'emotional'] | Results: 10
+2026-04-24 10:02:59,259 - INFO - Running profile test: high energy gym edm or rock
+2026-04-24 10:02:59,260 - INFO - Query: high energy gym edm or rock | Expanded: ['rock'] | Results: 3
+2026-04-24 10:02:59,261 - INFO - Running profile test: happy upbeat dance pop
+2026-04-24 10:02:59,261 - INFO - Query: happy upbeat dance pop | Expanded: ['happy', 'upbeat', 'dance', 'pop'] | Results: 12
+2026-04-24 10:04:41,330 - INFO - System started
+2026-04-24 10:04:41,330 - INFO - Loaded 30 songs
+2026-04-24 10:04:47,758 - INFO - User query: i want pop music
+2026-04-24 10:04:47,759 - INFO - Query: i want pop music | Expanded: ['pop'] | Results: 10
+2026-04-24 10:04:50,333 - INFO - Ranking mode selected: Genre-First
+2026-04-24 10:04:50,334 - INFO - Generated explanation for song: Fairy of Shampoo
+2026-04-24 10:04:50,334 - INFO - Recommended: Fairy of Shampoo | Score: 2.52 | Confidence: 0.51
+2026-04-24 10:04:50,334 - INFO - Generated explanation for song: BIRDS OF A FEATHER
+2026-04-24 10:04:50,334 - INFO - Recommended: BIRDS OF A FEATHER | Score: 2.50 | Confidence: 0.5
+2026-04-24 10:04:50,334 - INFO - Generated explanation for song: Como La Flor
+2026-04-24 10:04:50,334 - INFO - Recommended: Como La Flor | Score: 2.23 | Confidence: 0.45
+2026-04-24 10:04:50,335 - INFO - Generated explanation for song: Supernatural
+2026-04-24 10:04:50,335 - INFO - Recommended: Supernatural | Score: 2.20 | Confidence: 0.44
+2026-04-24 10:04:50,335 - INFO - Generated explanation for song: Stateside
+2026-04-24 10:04:50,335 - INFO - Recommended: Stateside | Score: 2.20 | Confidence: 0.44
+2026-04-24 10:04:50,342 - INFO - Retrieved 10 songs
+2026-04-24 10:04:50,344 - INFO - Running profile test: sad indie low-energy music
+2026-04-24 10:04:50,344 - INFO - Query: sad indie low-energy music | Expanded: ['sad', 'melancholy', 'chill', 'emotional'] | Results: 10
+2026-04-24 10:04:50,345 - INFO - Running profile test: high energy gym edm or rock
+2026-04-24 10:04:50,346 - INFO - Query: high energy gym edm or rock | Expanded: ['rock'] | Results: 3
+2026-04-24 10:04:50,347 - INFO - Running profile test: happy upbeat dance pop
+2026-04-24 10:04:50,347 - INFO - Query: happy upbeat dance pop | Expanded: ['happy', 'upbeat', 'dance', 'pop'] | Results: 12
+2026-04-24 10:05:25,826 - INFO - System started
+2026-04-24 10:05:25,826 - INFO - Loaded 30 songs
+2026-04-24 10:05:28,529 - INFO - User query: rock
+2026-04-24 10:05:28,529 - INFO - Query: rock | Expanded: ['rock'] | Results: 3
+2026-04-24 10:05:31,252 - INFO - Ranking mode selected: Mood-First
+2026-04-24 10:05:31,254 - INFO - Generated explanation for song: Smells Like Teen Spirit
+2026-04-24 10:05:31,254 - INFO - Recommended: Smells Like Teen Spirit | Score: 3.63 | Confidence: 0.73
+2026-04-24 10:05:31,254 - INFO - Generated explanation for song: De Musica Ligera
+2026-04-24 10:05:31,254 - INFO - Recommended: De Musica Ligera | Score: 3.35 | Confidence: 0.67
+2026-04-24 10:05:31,254 - INFO - Generated explanation for song: A Dios Le Pido
+2026-04-24 10:05:31,254 - INFO - Recommended: A Dios Le Pido | Score: 2.30 | Confidence: 0.46
+2026-04-24 10:05:31,258 - INFO - Retrieved 3 songs
+2026-04-24 10:05:31,260 - INFO - Running profile test: sad indie low-energy music
+2026-04-24 10:05:31,260 - INFO - Query: sad indie low-energy music | Expanded: ['sad', 'melancholy', 'chill', 'emotional'] | Results: 10
+2026-04-24 10:05:31,262 - INFO - Running profile test: high energy gym edm or rock
+2026-04-24 10:05:31,262 - INFO - Query: high energy gym edm or rock | Expanded: ['rock'] | Results: 3
+2026-04-24 10:05:31,264 - INFO - Running profile test: happy upbeat dance pop
+2026-04-24 10:05:31,265 - INFO - Query: happy upbeat dance pop | Expanded: ['happy', 'upbeat', 'dance', 'pop'] | Results: 12
+2026-04-24 10:07:02,716 - INFO - System started
+2026-04-24 10:07:02,716 - INFO - Loaded 30 songs
+2026-04-24 10:07:05,237 - INFO - User query: rock
+2026-04-24 10:07:05,238 - INFO - Query: rock | Expanded: ['rock'] | Results: 3
+2026-04-24 10:07:13,990 - INFO - Ranking mode selected: Mood-First
+2026-04-24 10:07:13,991 - INFO - Generated explanation for song: Smells Like Teen Spirit
+2026-04-24 10:07:13,991 - INFO - Recommended: Smells Like Teen Spirit | Score: 3.63 | Confidence: 0.73
+2026-04-24 10:07:13,991 - INFO - Generated explanation for song: De Musica Ligera
+2026-04-24 10:07:13,991 - INFO - Recommended: De Musica Ligera | Score: 3.35 | Confidence: 0.67
+2026-04-24 10:07:13,991 - INFO - Generated explanation for song: A Dios Le Pido
+2026-04-24 10:07:13,991 - INFO - Recommended: A Dios Le Pido | Score: 2.30 | Confidence: 0.46
+2026-04-24 10:07:13,994 - INFO - Retrieved 3 songs
+2026-04-24 10:07:13,995 - INFO - Running profile test: sad indie low-energy music
+2026-04-24 10:07:13,995 - INFO - Query: sad indie low-energy music | Expanded: ['sad', 'melancholy', 'chill', 'emotional'] | Results: 10
+2026-04-24 10:07:13,996 - INFO - Running profile test: high energy gym edm or rock
+2026-04-24 10:07:13,997 - INFO - Query: high energy gym edm or rock | Expanded: ['rock'] | Results: 3
+2026-04-24 10:07:13,998 - INFO - Running profile test: happy upbeat dance pop
+2026-04-24 10:07:13,998 - INFO - Query: happy upbeat dance pop | Expanded: ['happy', 'upbeat', 'dance', 'pop'] | Results: 12
+2026-04-24 10:16:51,328 - INFO - System started
+2026-04-24 10:16:51,329 - INFO - Loaded 30 songs
+2026-04-24 10:16:55,871 - INFO - User query: crazy
+2026-04-24 10:16:55,871 - INFO - Query: crazy | Expanded: ['crazy'] | Results: 0
+2026-04-24 10:17:01,243 - INFO - System started
+2026-04-24 10:17:01,243 - INFO - Loaded 30 songs
+2026-04-24 10:17:03,793 - INFO - User query: happy
+2026-04-24 10:17:03,793 - INFO - Query: happy | Expanded: ['happy', 'upbeat', 'dance'] | Results: 5
+2026-04-24 10:17:06,523 - INFO - Ranking mode selected: Mood-First
+2026-04-24 10:17:06,523 - INFO - Generated explanation for song: Best of Me
+2026-04-24 10:17:06,524 - INFO - Recommended: Best of Me | Score: 4.80 | Confidence: 0.96
+2026-04-24 10:17:06,524 - INFO - Generated explanation for song: ETA
+2026-04-24 10:17:06,524 - INFO - Recommended: ETA | Score: 4.75 | Confidence: 0.95
+2026-04-24 10:17:06,524 - INFO - Generated explanation for song: Telephone
+2026-04-24 10:17:06,524 - INFO - Recommended: Telephone | Score: 4.60 | Confidence: 0.92
+2026-04-24 10:17:06,524 - INFO - Generated explanation for song: EeO
+2026-04-24 10:17:06,524 - INFO - Recommended: EeO | Score: 4.60 | Confidence: 0.92
+2026-04-24 10:17:06,524 - INFO - Generated explanation for song: Pose
+2026-04-24 10:17:06,524 - INFO - Recommended: Pose | Score: 4.55 | Confidence: 0.91
+2026-04-24 10:17:06,528 - INFO - Retrieved 5 songs
+2026-04-24 10:17:06,530 - INFO - Query: sad indie low-energy music | Expanded: ['sad', 'melancholy', 'chill', 'emotional'] | Results: 10
+2026-04-24 10:17:06,532 - INFO - Query: high energy gym edm rock music | Expanded: ['rock', 'energetic', 'intense', 'edm', 'high energy', 'edm', 'electronic', 'dance'] | Results: 8
+2026-04-24 10:17:06,534 - INFO - Query: happy upbeat dance pop music | Expanded: ['happy', 'upbeat', 'dance', 'pop'] | Results: 12
+2026-04-24 10:18:43,132 - INFO - System started
+2026-04-24 10:18:43,133 - INFO - Loaded 30 songs
+2026-04-24 10:18:48,430 - INFO - User query: happy
+2026-04-24 10:18:48,430 - INFO - Query: happy | Expanded: ['happy', 'upbeat', 'dance'] | Results: 5
+2026-04-24 10:18:50,651 - INFO - Ranking mode selected: Energy-Focused
+2026-04-24 10:18:50,651 - INFO - Generated explanation for song: ETA
+2026-04-24 10:18:50,651 - INFO - Recommended: ETA | Score: 3.72 | Confidence: 0.74
+2026-04-24 10:18:50,651 - INFO - Generated explanation for song: Best of Me
+2026-04-24 10:18:50,651 - INFO - Recommended: Best of Me | Score: 3.52 | Confidence: 0.7
+2026-04-24 10:18:50,651 - INFO - Generated explanation for song: Telephone
+2026-04-24 10:18:50,651 - INFO - Recommended: Telephone | Score: 3.50 | Confidence: 0.7
+2026-04-24 10:18:50,651 - INFO - Generated explanation for song: EeO
+2026-04-24 10:18:50,651 - INFO - Recommended: EeO | Score: 3.50 | Confidence: 0.7
+2026-04-24 10:18:50,651 - INFO - Generated explanation for song: Pose
+2026-04-24 10:18:50,651 - INFO - Recommended: Pose | Score: 3.40 | Confidence: 0.68
+2026-04-24 10:18:50,655 - INFO - Retrieved 5 songs
+2026-04-24 10:18:50,656 - INFO - Query: sad indie low-energy music | Expanded: ['sad', 'melancholy', 'chill', 'emotional'] | Results: 10
+2026-04-24 10:18:50,657 - INFO - Query: high energy gym edm rock music | Expanded: ['rock', 'energetic', 'intense', 'edm', 'high energy', 'edm', 'electronic', 'dance'] | Results: 8
+2026-04-24 10:18:50,658 - INFO - Query: happy upbeat dance pop music | Expanded: ['happy', 'upbeat', 'dance', 'pop'] | Results: 12
+2026-04-24 10:19:17,783 - INFO - System started
+2026-04-24 10:19:17,783 - INFO - Loaded 30 songs
+2026-04-24 10:19:20,911 - INFO - User query: rock
+2026-04-24 10:19:20,911 - INFO - Query: rock | Expanded: ['rock'] | Results: 3
+2026-04-24 10:19:23,984 - INFO - Ranking mode selected: Genre-First
+2026-04-24 10:19:23,985 - INFO - Generated explanation for song: Smells Like Teen Spirit
+2026-04-24 10:19:23,985 - INFO - Recommended: Smells Like Teen Spirit | Score: 4.49 | Confidence: 0.9
+2026-04-24 10:19:23,985 - INFO - Generated explanation for song: De Musica Ligera
+2026-04-24 10:19:23,985 - INFO - Recommended: De Musica Ligera | Score: 4.28 | Confidence: 0.86
+2026-04-24 10:19:23,985 - INFO - Generated explanation for song: A Dios Le Pido
+2026-04-24 10:19:23,985 - INFO - Recommended: A Dios Le Pido | Score: 1.94 | Confidence: 0.39
+2026-04-24 10:19:23,988 - INFO - Retrieved 3 songs
+2026-04-24 10:19:23,989 - INFO - Query: sad indie low-energy music | Expanded: ['sad', 'melancholy', 'chill', 'emotional'] | Results: 10
+2026-04-24 10:19:23,991 - INFO - Query: high energy gym edm rock music | Expanded: ['rock', 'energetic', 'intense', 'edm', 'high energy', 'edm', 'electronic', 'dance'] | Results: 8
+2026-04-24 10:19:23,992 - INFO - Query: happy upbeat dance pop music | Expanded: ['happy', 'upbeat', 'dance', 'pop'] | Results: 12
+2026-04-24 10:21:32,678 - INFO - System started
+2026-04-24 10:21:32,679 - INFO - Loaded 30 songs
+2026-04-24 10:21:34,989 - INFO - User query: happy
+2026-04-24 10:21:34,990 - INFO - Query: happy | Expanded: ['happy', 'upbeat', 'dance'] | Results: 5
+2026-04-24 10:21:37,032 - INFO - Ranking mode selected: Mood-First
+2026-04-24 10:21:37,032 - INFO - Generated explanation for song: ETA
+2026-04-24 10:21:37,033 - INFO - Recommended: ETA | Score: 4.85 | Confidence: 0.97
+2026-04-24 10:21:37,033 - INFO - Generated explanation for song: Telephone
+2026-04-24 10:21:37,033 - INFO - Recommended: Telephone | Score: 4.70 | Confidence: 0.94
+2026-04-24 10:21:37,033 - INFO - Generated explanation for song: Best of Me
+2026-04-24 10:21:37,033 - INFO - Recommended: Best of Me | Score: 4.70 | Confidence: 0.94
+2026-04-24 10:21:37,033 - INFO - Generated explanation for song: EeO
+2026-04-24 10:21:37,033 - INFO - Recommended: EeO | Score: 4.70 | Confidence: 0.94
+2026-04-24 10:21:37,033 - INFO - Generated explanation for song: Pose
+2026-04-24 10:21:37,033 - INFO - Recommended: Pose | Score: 4.65 | Confidence: 0.93
+2026-04-24 10:21:37,036 - INFO - Retrieved 5 songs
+2026-04-24 10:21:37,038 - INFO - Query: sad indie low-energy music | Expanded: ['sad', 'melancholy', 'chill', 'emotional'] | Results: 10
+2026-04-24 10:21:37,039 - INFO - Query: high energy gym electronic workout music | Expanded: ['energetic', 'intense', 'edm', 'high energy'] | Results: 5
+2026-04-24 10:21:37,041 - INFO - Query: happy upbeat dance pop music | Expanded: ['happy', 'upbeat', 'dance', 'pop'] | Results: 12
+2026-04-24 10:25:52,906 - INFO - System started
+2026-04-24 10:25:52,906 - INFO - Loaded 30 songs
+2026-04-24 10:25:57,464 - INFO - User query: love
+2026-04-24 10:25:57,465 - INFO - Query: love | Expanded: ['love'] | Results: 0
+2026-04-24 10:26:00,638 - INFO - System started
+2026-04-24 10:26:00,638 - INFO - Loaded 30 songs
+2026-04-24 10:26:06,116 - INFO - User query: to study
+2026-04-24 10:26:06,116 - INFO - Query: to study | Expanded: ['lofi', 'chill', 'calm'] | Results: 5
+2026-04-24 10:26:10,360 - INFO - Ranking mode selected: Mood-First
+2026-04-24 10:26:10,360 - INFO - Generated explanation for song: Pyramids
+2026-04-24 10:26:10,360 - INFO - Recommended: Pyramids | Score: 6.52 | Confidence: 1.0
+2026-04-24 10:26:10,360 - INFO - Generated explanation for song: Fairy of Shampoo
+2026-04-24 10:26:10,360 - INFO - Recommended: Fairy of Shampoo | Score: 6.47 | Confidence: 1.0
+2026-04-24 10:26:10,360 - INFO - Generated explanation for song: Like Him
+2026-04-24 10:26:10,360 - INFO - Recommended: Like Him | Score: 6.33 | Confidence: 1.0
+2026-04-24 10:26:10,360 - INFO - Generated explanation for song: Supernatural
+2026-04-24 10:26:10,360 - INFO - Recommended: Supernatural | Score: 6.15 | Confidence: 1.0
+2026-04-24 10:26:10,360 - INFO - Generated explanation for song: Stateside
+2026-04-24 10:26:10,361 - INFO - Recommended: Stateside | Score: 6.15 | Confidence: 1.0
+2026-04-24 10:26:10,363 - INFO - Retrieved 5 songs
+2026-04-24 10:26:10,364 - INFO - Query: sad indie low-energy music | Expanded: ['sad', 'melancholy', 'chill', 'emotional'] | Results: 10
+2026-04-24 10:26:10,366 - INFO - Query: high energy gym electronic workout music | Expanded: ['energetic', 'intense', 'edm', 'high energy'] | Results: 5
+2026-04-24 10:26:10,368 - INFO - Query: happy upbeat dance pop music | Expanded: ['happy', 'upbeat', 'dance', 'pop'] | Results: 12

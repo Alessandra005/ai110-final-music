@@ -20,7 +20,7 @@ This final project expands the system into a **full AI pipeline** by adding:
 
 - Natural language query interpretation  
 - Retrieval-Augmented Generation (RAG)  
-- AI-generated explanations  
+- Rule-based AI-style generated explanations
 - Confidence scoring  
 - Logging and reliability evaluation  
 
@@ -100,6 +100,29 @@ The system was run for each profile using the built-in test block in `main.py`.
 This demonstrates that the recommender adapts its scoring based on mood, energy, and genre preferences — similar to real-world systems.
 
 ---
+## 🎛️ Multiple Ranking Modes
+
+The system supports modular ranking strategies using the Strategy Design Pattern:
+
+* **Energy-Focused:** Prioritizes energy similarity
+* **Genre-First:** Prioritizes matching genre
+* **Mood-First:** Prioritizes mood compatibility
+
+Users can choose a ranking mode in `main.py` before recommendations are generated.
+
+![RunUpdated](assets\a_opt_screenshoot.png) 
+
+## 📊 Visual Output Table
+
+Recommendations are displayed in a formatted summary table showing:
+
+* Song title
+* Artist
+* Score
+* Confidence
+* Explanation
+
+This improves readability and transparency.
 
 ## 🏗️ System Architecture
 
@@ -235,9 +258,8 @@ data/
 
 assets/
  ├── system_diagram.png
- ├── profile1.png
- ├── profile2.png
- ├── profile3.png
+ ├── g_screenshot.png
+ ├── 3p_screenshot.png
 
 tests/
  ├── test_recommender.py

@@ -55,23 +55,23 @@ class ScoringStrategy:
 class GenreFirstStrategy(ScoringStrategy):
     def __init__(self):
         super().__init__(
-            genre_weight=2.5,
-            mood_weight=1.0,
-            energy_weight=1.0,
-            valence_weight=0.75,
-            danceability_weight=0.5,
-            acousticness_weight=0.5,
+            genre_weight=4.0,
+            mood_weight=0.5,
+            energy_weight=0.5,
+            valence_weight=0.5,
+            danceability_weight=0.25,
+            acousticness_weight=0.25,
         )
 
 
 class MoodFirstStrategy(ScoringStrategy):
     def __init__(self):
         super().__init__(
-            genre_weight=1.0,
-            mood_weight=2.5,
-            energy_weight=1.0,
-            valence_weight=1.0,
-            danceability_weight=0.5,
+            genre_weight=0.5,
+            mood_weight=4.0,
+            energy_weight=0.75,
+            valence_weight=1.5,
+            danceability_weight=0.25,
             acousticness_weight=0.5,
         )
 
@@ -79,12 +79,12 @@ class MoodFirstStrategy(ScoringStrategy):
 class EnergyFocusedStrategy(ScoringStrategy):
     def __init__(self):
         super().__init__(
-            genre_weight=1.0,
-            mood_weight=1.0,
-            energy_weight=2.0,
-            valence_weight=1.0,
-            danceability_weight=0.25,
-            acousticness_weight=0.25,
+            genre_weight=0.5,
+            mood_weight=0.5,
+            energy_weight=4.0,
+            valence_weight=0.5,
+            danceability_weight=1.5,
+            acousticness_weight=0.1,
         )
 
 

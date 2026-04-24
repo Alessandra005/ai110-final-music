@@ -8,6 +8,7 @@ You will implement the functions in recommender.py:
 - score_song
 - recommend_songs
 """
+from tabulate import tabulate
 from src.rag import (
     retrieve_songs_by_query,
     generate_explanation,
@@ -16,10 +17,10 @@ from src.rag import (
 )
 from src.logger import log
 from src.recommender import (
-    EnergyFocusedStrategy,
+    load_songs,
     GenreFirstStrategy,
     MoodFirstStrategy,
-    load_songs,
+    EnergyFocusedStrategy,
     recommend_songs,
 )
 
@@ -39,7 +40,28 @@ def main() -> None:
         print("No songs found for that query.")
         return
 
-    strategy = EnergyFocusedStrategy()
+    print("\nChoose ranking mode:")
+    print("1 = Energy-Focused")
+    print("2 = Genre-First")
+    print("3 = Mood-First")
+
+    mode = input("Enter mode (1/2/3): ")
+
+    if mode == "1":
+        strategy = EnergyFocusedStrategy()
+        mode_name = "Energy-Focused"
+    elif mode == "2":
+        strategy = GenreFirstStrategy()
+        mode_name = "Genre-First"
+    elif mode == "3":
+        strategy = MoodFirstStrategy()
+        mode_name = "Mood-First"
+    else:
+        print("Invalid input. Defaulting to Energy-Focused.")
+        strategy = EnergyFocusedStrategy()
+        mode_name = "Energy-Focused"
+
+    log(f"Ranking mode selected: {mode_name}")
 
     user_prefs = query_to_preferences(user_query)
 
@@ -50,42 +72,73 @@ def main() -> None:
         strategy=strategy,
     )
 
-    print("\nTop recommendations:\n")
+    table_data = []
 
     for song, score, _ in recommendations:
         explanation = generate_explanation(user_query, song)
         confidence = compute_confidence(score)
 
-        print(f"{song['title']} - Score: {score:.2f}")
-        print(f"Confidence: {confidence}")
-        print(f"AI Explanation: {explanation}")
-        print()
+        table_data.append([
+            song["title"],
+            song["artist"],
+            f"{score:.2f}",
+            confidence,
+            explanation
+        ])
 
         log(f"Recommended: {song['title']} | Score: {score:.2f} | Confidence: {confidence}")
 
+    print("\nTop Recommendations:\n")
+    print(tabulate(
+        table_data,
+        headers=["Title", "Artist", "Score", "Confidence", "Reason"],
+        tablefmt="grid"
+    ))
+
     log(f"Retrieved {len(retrieved_songs)} songs")
 
-    # 3-PROFILE EXPERIMENT 
+    # 3-PROFILE EXPERIMENT
     profiles = [
-        "sad indie low-energy music",
-        "high energy gym edm or rock",
-        "happy upbeat dance pop"
+        {
+            "name": "Sad Indie Low-Energy Listener",
+            "query": "sad indie low-energy music",
+            "strategy": MoodFirstStrategy()
+        },
+        {
+            "name": "High Energy Gym Listener",
+            "query": "high energy gym electronic workout music",
+            "strategy": EnergyFocusedStrategy()
+        },
+        {
+            "name": "Happy Dance Pop Listener",
+            "query": "happy upbeat dance pop music",
+            "strategy": GenreFirstStrategy()
+        }
     ]
 
     print("\n=== Running 3 Profile Experiments ===\n")
 
     for profile in profiles:
-        print(f"\n--- Profile: {profile} ---")
-        log(f"Running profile test: {profile}")
+        print(f"\n--- Profile: {profile['name']} ---")
 
-        retrieved = retrieve_songs_by_query(profile, songs)
-        prefs = query_to_preferences(profile)
+        retrieved = retrieve_songs_by_query(profile["query"], songs)
 
-        recs = recommend_songs(prefs, retrieved, k=3, strategy=strategy)
+        if not retrieved:
+            print("No songs found.")
+            continue
 
-        for song, score, _ in recs:
+        prefs = query_to_preferences(profile["query"])
+
+        recs = recommend_songs(
+            prefs,
+            retrieved,
+            k=3,
+            strategy=profile["strategy"]
+        )
+
+        for song, score, reasons in recs:
             print(f"{song['title']} - {score:.2f}")
-        print()
+            print("Reasons:", ", ".join(reasons[:2]))
 
 
 if __name__ == "__main__":

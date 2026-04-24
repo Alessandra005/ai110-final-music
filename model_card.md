@@ -61,6 +61,35 @@ It is designed to recommend songs based on natural language user input.
 Example:
 
 > The system performs well on keyword-based queries but struggles with highly nuanced requests.
+---
+## Dataset
+
+The system uses a custom dataset of **30 songs**, each annotated with:
+
+- `title`  
+- `artist`  
+- `genre`  
+- `mood`  
+- `energy`  
+- `tempo_bpm`  
+- `valence`  
+- `danceability`  
+- `acousticness`
+
+The dataset includes a mix of genres (indie, pop, hip-hop, kpop, reggaeton, rock, jazz, electronic, soul, latin pop, grunge) and moods (sad, chill, intense, happy, confident, energetic, nostalgic, dreamy, angry, bittersweet, etc.).
+
+---
+
+## 🏗️ Model Architecture
+
+This system is not a neural model. Instead, it uses:
+
+- **Keyword-based retrieval** (RAG)  
+- **Rule-based scoring strategies**  
+- **Template-based explanation generation**  
+- **Confidence scoring** based on normalized recommendation scores  
+
+This architecture prioritizes interpretability and modularity over predictive power.
 
 ---
 
