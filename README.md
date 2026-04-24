@@ -88,7 +88,6 @@ To evaluate the system, I created **three distinct user profiles**:
 The system was run for each profile using the built-in test block in `main.py`.
 
 ### ✔ Example Output Screenshots  
-![Run](assets/g_screenshot.png) 
 ![Profiles](assets/3p_screenshot.png)
 
 ### ✔ Comparison Summary
@@ -110,7 +109,7 @@ The system supports modular ranking strategies using the Strategy Design Pattern
 
 Users can choose a ranking mode in `main.py` before recommendations are generated.
 
-![RunUpdated](assets\a_opt_screenshoot.png) 
+![RunUpdated](assets/a_opt_screenshoot.png) 
 
 ## 📊 Visual Output Table
 

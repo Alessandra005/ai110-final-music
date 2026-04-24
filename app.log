@@ -243,3 +243,37 @@
 2026-04-24 10:26:10,364 - INFO - Query: sad indie low-energy music | Expanded: ['sad', 'melancholy', 'chill', 'emotional'] | Results: 10
 2026-04-24 10:26:10,366 - INFO - Query: high energy gym electronic workout music | Expanded: ['energetic', 'intense', 'edm', 'high energy'] | Results: 5
 2026-04-24 10:26:10,368 - INFO - Query: happy upbeat dance pop music | Expanded: ['happy', 'upbeat', 'dance', 'pop'] | Results: 12
+2026-04-24 10:38:29,636 - INFO - System started
+2026-04-24 10:38:29,637 - INFO - Loaded 33 songs
+2026-04-24 10:38:36,336 - INFO - User query: i want rock music
+2026-04-24 10:38:36,338 - INFO - Query: i want rock music | Expanded: ['rock'] | Results: 3
+2026-04-24 10:38:39,053 - INFO - Ranking mode selected: Genre-First
+2026-04-24 10:38:39,053 - INFO - Generated explanation for song: Smells Like Teen Spirit
+2026-04-24 10:38:39,053 - INFO - Recommended: Smells Like Teen Spirit | Score: 5.12 | Confidence: 1.0
+2026-04-24 10:38:39,053 - INFO - Generated explanation for song: De Musica Ligera
+2026-04-24 10:38:39,053 - INFO - Recommended: De Musica Ligera | Score: 4.97 | Confidence: 0.99
+2026-04-24 10:38:39,053 - INFO - Generated explanation for song: A Dios Le Pido
+2026-04-24 10:38:39,053 - INFO - Recommended: A Dios Le Pido | Score: 1.05 | Confidence: 0.21
+2026-04-24 10:38:39,056 - INFO - Retrieved 3 songs
+2026-04-24 10:38:39,057 - INFO - Query: sad indie low-energy music | Expanded: ['sad', 'melancholy', 'chill', 'emotional'] | Results: 10
+2026-04-24 10:38:39,061 - INFO - Query: high energy gym electronic workout music | Expanded: ['energetic', 'intense', 'edm', 'high energy'] | Results: 5
+2026-04-24 10:38:39,063 - INFO - Query: happy upbeat dance pop music | Expanded: ['happy', 'upbeat', 'dance', 'pop'] | Results: 13
+2026-04-24 10:39:10,301 - INFO - System started
+2026-04-24 10:39:10,302 - INFO - Loaded 33 songs
+2026-04-24 10:39:14,706 - INFO - User query: study music
+2026-04-24 10:39:14,707 - INFO - Query: study music | Expanded: ['lofi', 'chill', 'calm'] | Results: 5
+2026-04-24 10:39:17,961 - INFO - Ranking mode selected: Energy-Focused
+2026-04-24 10:39:17,962 - INFO - Generated explanation for song: Pyramids
+2026-04-24 10:39:17,962 - INFO - Recommended: Pyramids | Score: 5.57 | Confidence: 1.0
+2026-04-24 10:39:17,962 - INFO - Generated explanation for song: Fairy of Shampoo
+2026-04-24 10:39:17,962 - INFO - Recommended: Fairy of Shampoo | Score: 5.56 | Confidence: 1.0
+2026-04-24 10:39:17,962 - INFO - Generated explanation for song: Like Him
+2026-04-24 10:39:17,962 - INFO - Recommended: Like Him | Score: 5.00 | Confidence: 1.0
+2026-04-24 10:39:17,962 - INFO - Generated explanation for song: Supernatural
+2026-04-24 10:39:17,962 - INFO - Recommended: Supernatural | Score: 4.80 | Confidence: 0.96
+2026-04-24 10:39:17,962 - INFO - Generated explanation for song: Stateside
+2026-04-24 10:39:17,962 - INFO - Recommended: Stateside | Score: 4.80 | Confidence: 0.96
+2026-04-24 10:39:17,968 - INFO - Retrieved 5 songs
+2026-04-24 10:39:17,969 - INFO - Query: sad indie low-energy music | Expanded: ['sad', 'melancholy', 'chill', 'emotional'] | Results: 10
+2026-04-24 10:39:17,971 - INFO - Query: high energy gym electronic workout music | Expanded: ['energetic', 'intense', 'edm', 'high energy'] | Results: 5
+2026-04-24 10:39:17,973 - INFO - Query: happy upbeat dance pop music | Expanded: ['happy', 'upbeat', 'dance', 'pop'] | Results: 13
