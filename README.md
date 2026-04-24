@@ -269,4 +269,4 @@ tests/
 
 ## 💼 Portfolio Note
 
-This project demonstrates my ability to design and implement a modular AI system that integrates retrieval, reasoning, and evaluation. It reflects my interest in building practical, interpretable AI applications.
+This project reflects my approach as an AI engineer: I enjoy building systems that combine technical logic with real user needs. Rather than focusing only on model outputs, I care about transparency, modular design, and creating tools people can actually use. Through this recommender system, I demonstrated skills in data handling, retrieval systems, ranking logic, testing, and iterative improvement.
