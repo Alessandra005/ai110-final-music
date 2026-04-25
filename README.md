@@ -239,7 +239,7 @@ Initial retrieval logic was too simplistic and required iterative improvement.
 
 ## 🎥 Demo
 
-Loom walkthrough: *(add link here)*
+Loom walkthrough: https://www.loom.com/share/4f7eb535819940cdb945803d22ee0373
 
 ---
 
